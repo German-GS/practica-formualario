@@ -34,17 +34,43 @@
                     <input type="number" id="personalAge" placeholder="Edad" class="form-control">
                 </div>
                 <div class="col-md-4">
-                    <label for="personalGener" class="form-label">Genero</label>
-                    <input type="text" id="personalGener" placeholder="Genero" class="form-control">
+                    <label for="personalGender" class="form-label">Genero</label>
+                    <input type="text" id="personalGender" placeholder="Genero" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label for="personalProfession" class="form-label">Profesion</label>
                     <input type="text" placeholder="Profesion" class="form-control" id="personalProfession">
                 </div>
+                <div class="col-md-4">
+                    <label for="personalProvince" class="form-label">Provincia</label>
+                    <input type="text" id="personalProvince" placeholder="Provincia" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="personalCanton" class="form-label">Canton</label>
+                    <input type="text" id="personalCanton" placeholder="Canton" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="personalDistrict" class="form-label">Distrito</label>
+                    <input type="text" id="personalDistrict" placeholder="Distrito" class="form-control">
+                </div>
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <button type="submit" class="btn btn-primary" onclick="obtenerDatos()">Registrar</button>
 
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Datos de las personas</h2>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item" id="person1"></li>
+                        <li class="list-group-item" id="person2"></li>
+                    </ul>
+
+                </div>
+
+
             </div>
         </div>
     
