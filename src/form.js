@@ -1,3 +1,4 @@
+const listaPersonas = document.getElementById("listaPersonas");
 
 function obtenerDatos(){
     var nombrePersona = document.getElementById("personalName").value;
@@ -29,7 +30,17 @@ function obtenerDatos(){
 }
 
 function imprimirDatos(persona){
-    document.getElementById("person1").innerHTML= persona[0]+ ' '+ persona[1]+' ' + persona[2];
+    const template = document.getElementById("template-li")
+    console.log(template);
+    const fragment = createDocumentFragment()
+
+    persona.array.forEach(element => {
+        template.querySelector('.list-group-item').textContent=element;
+        const clone=template.cloneNode(true);
+
+        
+    });
+    fragment.appendChild(fragment)
 
 }
 
